@@ -1,34 +1,37 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
-    <meta charset="utf-8" />
-    <title>@ViewBag.Title - MyShop</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="~/Content/Site.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/StyleCSS/StyleSheet1.css" rel="stylesheet" />
 </head>
+
 <body>
-    <header>
-        <div class="container header-flex">
-            <a href="~/" class="logo">
-                <img src="~/Content/logo.png" alt="MyShop" />
-            </a>
-            <nav>   
-                <ul>
-                    <li><a href="~/">Home</a></li>
-                    <li><a href="~/Product">Shop</a></li>
-                    <li><a href="~/Cart">Cart</a></li>
-                    <li><a href="~/Account/Login">Login</a></li>
-                </ul>
-            </nav>
+    <div id="heading">
+        <div id="header-left">
+            <img src="https://raw.githubusercontent.com/DatPham06/webdata/main/Picture/LOGO_HUFLIT.png" class="logo" />
+            <div id="storename">
+                <h2>PhoneStoreGR2</h2>
+            </div>
         </div>
-    </header>
-    <main class="container">
+        <div id="header-mid">
+            <input type="text" placeholder="nhập từ khóa" class="search-box" />
+            <button type="submit" class="search-btn">Tìm kiếm</button>
+            <ul id="menu">
+                <li>Trang Chủ</li>
+                <li>Sản Phẩm</li>
+                <li>Liên Hệ</li>
+            </ul>
+        </div>
+        <div id="header-right">
+
+        </div>
+    </div>
+    <div>
         @RenderBody()
-    </main>
+    </div>
     <footer>
-        <div class="container">
-            <p>&copy; @DateTime.Now.Year MyShop. Inspired by Adidas &amp; Nike.</p>
-        </div>
     </footer>
 </body>
 </html>
