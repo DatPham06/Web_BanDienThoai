@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - MyShop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="container header-flex">
+            <a href="~/" class="logo">
+                <img src="~/Content/logo.png" alt="MyShop" />
+            </a>
+            <nav>   
+                <ul>
+                    <li><a href="~/">Home</a></li>
+                    <li><a href="~/Product">Shop</a></li>
+                    <li><a href="~/Cart">Cart</a></li>
+                    <li><a href="~/Account/Login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        @RenderBody()
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; @DateTime.Now.Year MyShop. Inspired by Adidas &amp; Nike.</p>
+        </div>
+    </footer>
+</body>
+</html>
