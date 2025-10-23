@@ -144,6 +144,7 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\StyleCSS\LayoutSheet.css" />
+    <Content Include="Content\StyleCSS\LienHeSheet.css" />
     <Content Include="Content\StyleCSS\SanPhamSheet.css" />
     <Content Include="Content\StyleCSS\TrangChuSheet.css" />
     <Content Include="favicon.ico" />
@@ -185,6 +186,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\LienHe,GioHang\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
