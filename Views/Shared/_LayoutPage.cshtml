@@ -6,6 +6,8 @@
     <title>@ViewData["Title"] - Tên Website</title>
     <link href="~/Content/StyleCSS/LayoutSheet.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <script src="~/Scripts/MyJavaScript/JSLayOut.js"></script>
+    @RenderSection("Scripts", required: false)
 </head>
 <body>
     <div class="site-container">
@@ -15,7 +17,7 @@
                 <!-- Logo Section -->
                 <div class="logo-section">
                         <img src="https://raw.githubusercontent.com/DatPham06/webdata/main/dienthoai/dienthoai/unnamed.jpg" alt="Logo" class="logo">
-                    <a href="#" class="brand-name">PhoneStore</a>
+                    <a href="/Home/TrangChu" class="brand-name">PhoneStore</a>
                 </div>
 
                 <!-- Search Section -->
@@ -28,24 +30,29 @@
 
                 <!-- Navigation Section -->
                 <div class="nav-section">
+                    <div class="dropdown">
+                        <button class="nav-link dropdown-btn">
+                            <i class="fa-solid fa-bars"></i>Sản Phẩm
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#)">Iphone</a>
+                            <a href="#)">Xiaomi</a>
+                            <a href="#)">SamSung</a>
+                            <a href="#)">Huawei</a>
+                            <a href="#)">Oppo</a>
+                        </div>
+                    </div>
                     <a href="#" class="nav-link">
                         🛒 Giỏ hàng
                     </a>
-                    <a href="#">
-                        <button class="login-btn">Đăng nhập</button>
+                    <a href="#"class="login-btn">
+                        Dang nhap
                     </a>
                 </div>
             </div>
         </header>
 
-        <!-- BANNER (Optional - có thể bật/tắt theo ViewData) -->
-        <div class="site-banner">
-            <div class="banner-content">
-                <h1>Chào Mừng Đến Với PhoneStore</h1>
-                <p>Khám phá những sản phẩm tuyệt vời với giá cả hợp lý</p>
-                <a href="#" class="banner-btn">Mua Sắm Ngay</a>
-            </div>
-        </div>
+        
 
         <!-- MAIN CONTENT -->
         <main class="site-main">

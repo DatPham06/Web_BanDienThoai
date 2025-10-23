@@ -1,0 +1,16 @@
+﻿.banner {
+        width: 100%;
+        margin: 20px -20px 40px -20px;
+        display: flex;
+        justify-content: center;
+        background-color: #f5f5f5;
+        padding: 20px 0;
+    }
+
+    .banner img {
+        max-width: calc(100% - 40px);
+        height: auto;
+        display: block;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+    }
