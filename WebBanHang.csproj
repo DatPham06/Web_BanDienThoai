@@ -145,6 +145,7 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\LienHe,GioHang\damm.png" />
     <Content Include="Content\LienHe,GioHang\Hình của trực.jpg" />
+    <Content Include="Content\StyleCSS\DangNhapSheet.css" />
     <Content Include="Content\StyleCSS\LayoutSheet.css" />
     <Content Include="Content\StyleCSS\LienHeSheet.css" />
     <Content Include="Content\StyleCSS\SanPhamSheet.css" />
@@ -185,6 +186,7 @@
     <Content Include="Views\Home\SanPham.cshtml" />
     <Content Include="Views\Home\DangNhap.cshtml" />
     <Content Include="Views\Shared\_LayoutPage.cshtml" />
+    <Content Include="Views\Home\DangKi.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
