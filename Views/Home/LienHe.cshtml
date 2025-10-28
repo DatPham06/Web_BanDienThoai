@@ -1,49 +1,43 @@
 ﻿
 @{
     ViewBag.Title = "LienHe";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
 }
+<link href="~/Content/StyleCSS/LienHeSheet.css" rel="stylesheet" />
+<body>
+    <section class="contact">
+        <h1>Đây là trang liên hệ</h1>
+        <p class="sub-title">Nhóm 3 noob + dự án :Web bán điện thoại </p>
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
-<style>
-    .facebook {
-        background-color: aqua;
-        font-size: 25px;
-        text-decoration: none;
-    }
+        <div class="members">
+            @* CLASS DADDY*@
 
-        .facebook:hover {
-            background-color: grey;
-            color: white;
-        }
+            <div class="member">
+                @* CLASS SON*@
+                <div class="avatar">
 
-    .github {
-        background-color: lightpink;
-        font-size: 25px;
-        text-decoration: none;
-    }
+                </div>
+                <p>Name: Phạm Thành Đạt</p>
+                <p>MSSV: 24dh113245</p>
+            </div>
 
-        .github:hover {
-            background-color: grey;
-            color: white;
-        }
+            <div class="member">
+                <div class="avatar">
+                    <img src="~/Content/LienHe,giohang/Hình của trực.jpg" class="contact-img">
+                </div>
+                <p>Name: Trần Công Chính Trực</p>
+                <p>MSSV: 24DH112970</p>
+            </div>
 
-    .email {
-        background-color: yellow;
-        font-size: 25px;
-        text-decoration: none;
-    }
+            <div class="member">
+                <div class="avatar">
+                    <img src="~/Content/LienHe,giohang/damm.png" class="contact-img">
+                </div>
+                <p>Name: Nguyễn Đức Trí</p>
+                <p>Mssv:24DH190272</p>
+            </div>
+        </div>
+    </section>
 
-        .email:hover {
-            background-color: grey;
-            color: white;
-        }
-</style>
-<h2 style="text-align: center">Liên hệ chúng tôi tại </h2>
-<a href="https://www.facebook.com/" target="_blank" class="facebook"><i class="fa-brands fa-facebook"></i> Facebook</a>
-<br />
-<a href="https://github.com/your-github-username" target="_blank" class="github"><i class="fa-brands fa-github"></i> Github</a>
-<br />
-<a href="https://mail.google.com/mail/?view=cm&fs=1&to=conttactructranmc@gmail.com&su=Liên%20h
- ệ&body=Xin%20chào" target="_blank" class="email"><i class="fa-solid fa-envelope"></i> Email</a>
+</body>
+

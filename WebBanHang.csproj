@@ -143,9 +143,11 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
-    <Content Include="Content\StyleCSS\StyleBody.css" />
-    <Content Include="Content\StyleCSS\StyleFooter.css" />
-    <Content Include="Content\StyleCSS\StyleSheet1.css" />
+    <Content Include="Content\StyleCSS\DangNhapSheet.css" />
+    <Content Include="Content\StyleCSS\LayoutSheet.css" />
+    <Content Include="Content\StyleCSS\LienHeSheet.css" />
+    <Content Include="Content\StyleCSS\SanPhamSheet.css" />
+    <Content Include="Content\StyleCSS\TrangChuSheet.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -166,6 +168,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\MyJavaScript\JSLayOut.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -176,15 +179,16 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\TrangChu.cshtml" />
     <Content Include="Views\Home\LienHe.cshtml" />
     <Content Include="Views\Home\SanPham.cshtml" />
     <Content Include="Views\Home\DangNhap.cshtml" />
+    <Content Include="Views\Shared\_LayoutPage.cshtml" />
+    <Content Include="Views\Home\DangKi.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\LienHe,GioHang\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

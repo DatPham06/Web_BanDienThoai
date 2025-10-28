@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "DangKi";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+    <link href="~/Content/StyleCSS/DangNhapSheet.css" rel="stylesheet" />
+}
+
+<main class="site-main login-page-main">
+    <div class="login-container">
+        <form action="/Home/XuLyDangKy" method="POST">
+            <h1>Đăng kí</h1>
+
+            <div class="input-group">
+                <label for="reg_username">Tên đăng nhập:</label>
+                <input type="text" id="reg_username" name="username" required>
+            </div>
+
+            <div class="input-group">
+                <label for="reg_email">Email tài khoản:</label>
+                <input type="email" id="reg_email" name="email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="reg_password">Mật khẩu:</label>
+                <input type="password" id="reg_password" name="password" required>
+            </div>
+
+            <div class="input-group">
+                <label for="reg_confirm_password">Nhập lại mật khẩu:</label>
+                <input type="password" id="reg_confirm_password" name="confirm_password" required>
+            </div>
+
+            <button type="submit" class="login-button">Đăng kí</button>
+
+            <div class="register-link">
+                <p>Đã có tài khoản? <a href="/Home/DangNhap">Đăng nhập ngay</a></p>
+            </div>
+        </form>
+    </div>
+</main>
