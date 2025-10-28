@@ -1,0 +1,113 @@
+﻿/* CSS này sẽ áp dụng cho class bạn vừa thêm vào thẻ <main>
+  Nó sẽ căn giữa form và đặt màu nền cam nhạt cho khu vực nội dung
+*/
+.login-page-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px; /* Thêm khoảng đệm trên/dưới */
+    background-color: white; /* Màu nền cam rất nhạt cho khu vực main */
+}
+
+/* Khung chứa form đăng nhập */
+.login-container {
+    font-family: inherit; /* QUAN TRỌNG: Kế thừa font từ layout */
+    background-color: #FFE4B5; /* Màu cam nhạt (Moccasin) cho khung */
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+    /* Tiêu đề "Đăng nhập" */
+    .login-container h1 {
+        text-align: center;
+        color: #8B4513; /* Màu nâu sẫm (SaddleBrown) */
+        margin-bottom: 2rem;
+        font-weight: 700;
+    }
+
+/* Nhóm nhãn và ô nhập liệu */
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+    .input-group label {
+        display: block;
+        margin-bottom: 8px;
+        color: #5C3D2E; /* Màu nâu đậm hơn */
+        font-weight: 500;
+    }
+
+    /* Ô nhập liệu */
+    .input-group input {
+        width: 100%;
+        padding: 12px 15px;
+        border: 1px solid #FFDAB9; /* Màu cam (PeachPuff) cho viền */
+        border-radius: 25px; /* Bo tròn như hình */
+        background-color: #FFFDF5; /* Màu trắng kem */
+        box-sizing: border-box;
+        font-size: 1rem;
+        color: #5C3D2E;
+    }
+
+        .input-group input:focus {
+            outline: none;
+            border-color: #FFA500; /* Màu cam đậm khi focus */
+            box-shadow: 0 0 5px rgba(255, 165, 0, 0.5);
+        }
+
+/* Tùy chọn "Quên mật khẩu" */
+.options {
+    text-align: right;
+    margin-bottom: 1.5rem;
+    margin-top: -1rem; /* Kéo lên một chút */
+}
+
+.forgot-password {
+    color: #8B4513;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+    .forgot-password:hover {
+        text-decoration: underline;
+    }
+
+/* Nút "Đăng nhập" */
+.login-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background-color: #FFA500; /* Màu cam chính */
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .login-button:hover {
+        background-color: #E59400; /* Màu cam đậm hơn khi di chuột */
+    }
+
+/* Link "Đăng kí" */
+.register-link {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #5C3D2E;
+}
+
+    .register-link a {
+        color: #FFA500; /* Dùng màu cam chính cho link */
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }
