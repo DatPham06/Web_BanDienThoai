@@ -24,5 +24,9 @@ namespace WebBanHang.Controllers
         {
             return View();
         }
+        public ActionResult DangKi()
+        {
+            return View();
+        }
     }
 }

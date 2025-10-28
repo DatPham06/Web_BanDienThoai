@@ -7,7 +7,6 @@ body {
 .contact {
     text-align: center;
     padding: 40px; 
-    background-color: pink;
     position: relative;
     /*đặt cơ sở tham chiếu cho các phần con dùng position: absolute (ví dụ .contact-icon). Nếu bỏ relative, icon absolute sẽ lấy body làm tham chiếu.*/
 }

@@ -9,6 +9,8 @@
     <script src="~/Scripts/MyJavaScript/JSLayOut.js"></script>
     @RenderSection("Scripts", required: false)
 </head>
+
+   
 <body>
     <div class="site-container">
         <!-- HEADER -->
@@ -45,12 +47,13 @@
                     <a href="#" class="nav-link">
                         <i class="fa-solid fa-cart-shopping"></i>Giỏ hàng
                     </a>
-                    <a href="~/Home/LienHe" class="nav-link">
-                        <i class="fa-solid fa-cart-shopping"></i>Liên Hệ
                     </a>
-                    <a href="/Home/DangNhap" class="login-btn">
-                        <i class="fa-solid fa-circle-user"></i>Đăng nhập
                     </a>
+                        <div class="dropdown-content">
+                            <a href="/Home/DangNhap">Đăng nhập</a>
+                            <a href="/Home/DangKi">Đăng kí</a>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -74,8 +77,6 @@
                     <p>Email: contact@example.com</p>
                     <p>Hotline: 1900-xxxx</p>
                 </div>
-
-                <!-- Chính sách -->
                 <div class="footer-section">
                     <h3>Chính Sách</h3>
                     <p><a href="#" style="color: white; text-decoration: none;">Chính sách bảo mật</a></p>
@@ -105,7 +106,6 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; @DateTime.Now.Year - PhoneStore. All rights reserved.</p>
             </div>
         </footer>
     </div>

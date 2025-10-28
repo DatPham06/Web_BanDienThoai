@@ -140,6 +140,7 @@ body {
 
 .login-btn:hover {
     background: #e68900;
+
 }
 
 
@@ -188,6 +189,7 @@ body {
 @media (max-width: 1024px) {
     .header-content {
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .search-section {
@@ -199,6 +201,16 @@ body {
     .footer-content {
         grid-template-columns: repeat(2, 1fr);
     }
+        .footer-content .map {
+            /* THÊM MỚI: Buộc thẻ bọc map cũng phải 100% */
+            width: 100%;
+}
+
+            .footer-content .map iframe {
+                /* SỬA: Dùng !important để ghi đè width="600" trong HTML */
+                width: 100% !important;
+                height: 300px; /* Điều chỉnh chiều cao cho hợp lý */
+            }
 }
 
 /* Mobile */
@@ -265,20 +277,20 @@ body {
     .site-main {
         padding: 20px 10px;
     }
+    .footer-content .map iframe {
+        height: 250px; /* Chiều cao nhỏ hơn cho vừa mobile */
 }
+}
+
+/* ===== BẮT ĐẦU SỬA DROPDOWN ===== */
+/* Thẻ bọc ngoài cho menu (Sản Phẩm & Tài Khoản) */
 .dropdown {
     position: relative;
     display: inline-block;
 }
-
 .dropdown-btn {
-    height:50px;
-    background: #ff9800;
-    color: white;
-    border: none;
     cursor: pointer;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -288,8 +300,8 @@ body {
     z-index: 1000;
     border-radius: 8px;
     margin-top: 5px;
+    right: 0;
 }
-
     .dropdown-content a {
         color: #333;
         padding: 12px 20px;
@@ -297,12 +309,10 @@ body {
         display: block;
         transition: all 0.3s;
     }
-
         .dropdown-content a:hover {
             background-color: #ff9800;
             color: white;
         }
-
         .dropdown-content a:first-child {
             border-radius: 8px 8px 0 0;
         }
