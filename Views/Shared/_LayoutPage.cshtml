@@ -18,9 +18,10 @@
             <div class="header-content">
                 <!-- Logo Section -->
                 <div class="logo-section">
-                    <img src="https://raw.githubusercontent.com/DatPham06/webdata/main/dienthoai/dienthoai/unnamed.jpg" alt="Logo" class="logo">
+                        <img src="https://raw.githubusercontent.com/DatPham06/webdata/main/dienthoai/dienthoai/unnamed.jpg" alt="Logo" class="logo">
                     <a href="/Home/TrangChu" class="brand-name">PhoneStore</a>
                 </div>
+
                 <!-- Search Section -->
                 <div class="search-section">
                     <form class="search-form" asp-controller="Search" asp-action="Index" method="get">
@@ -28,6 +29,7 @@
                         <button type="submit" class="search-btn">Tìm kiếm</button>
                     </form>
                 </div>
+
                 <!-- Navigation Section -->
                 <div class="nav-section">
                     <div class="dropdown">
@@ -52,7 +54,7 @@
                     <div class="dropdown">
                         <a href="#" class="login-btn dropdown-btn">
                             <i class="fa-solid fa-circle-user"></i>Tài khoản
-                        </a>
+                    </a>
                         <div class="dropdown-content">
                             <a href="/Home/DangNhap">Đăng nhập</a>
                             <a href="/Home/DangKi">Đăng kí</a>
@@ -63,14 +65,17 @@
             </div>
         </header>
 
+        
 
         <!-- MAIN CONTENT -->
         <main class="site-main">
             @RenderBody()
         </main>
+
         <!-- FOOTER -->
         <footer class="site-footer">
             <div class="footer-content">
+                <!-- Về chúng tôi -->
                 <div class="footer-section">
                     <h3>Về Chúng Tôi</h3>
                     <p>Website thương mại điện tử hàng đầu Việt Nam</p>
@@ -87,6 +92,7 @@
                     <p><a href="#" style="color: white; text-decoration: none;">Chính sách vận chuyển</a></p>
                 </div>
 
+                <!-- Liên kết -->
                 <div class="footer-section">
                     <h3>Liên Kết Nhanh</h3>
                     <p><a href="#" style="color: white; text-decoration: none;">Trang chủ</a></p>
@@ -95,12 +101,13 @@
                     <p><a href="~/Home/LienHe" style="color: white; text-decoration: none;">Liên hệ</a></p>
                 </div>
                 <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4602949547107!2d106.66478987608187!3d10.77601468937278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752edb765b5c25%3A0x9a3519bdad5a85a3!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBOZ2_huqFpIG5n4buvIC0gVGluIGjhu41jIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCAoSFVGTElUKQ!5e0!3m2!1svi!2s!4v1761226481734!5m2!1svi!2s"
-                            width="600"
-                            height="450"
-                            style="border:0;"
-                            allowfullscreen="" loading="lazy"
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4602949547107!2d106.66478987608187!3d10.77601468937278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752edb765b5c25%3A0x9a3519bdad5a85a3!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBOZ2_huqFpIG5n4buvIC0gVGluIGjhu41jIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCAoSFVGTElUKQ!5e0!3m2!1svi!2s!4v1761226481734!5m2!1svi!2s" 
+                            width="600" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" loading="lazy" 
                             referrerpolicy="no-referrer-when-downgrade">
+
                     </iframe>
                 </div>
             </div>

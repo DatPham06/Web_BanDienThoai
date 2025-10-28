@@ -204,7 +204,7 @@ body {
         .footer-content .map {
             /* THÊM MỚI: Buộc thẻ bọc map cũng phải 100% */
             width: 100%;
-        }
+}
 
             .footer-content .map iframe {
                 /* SỬA: Dùng !important để ghi đè width="600" trong HTML */
@@ -279,7 +279,7 @@ body {
     }
     .footer-content .map iframe {
         height: 250px; /* Chiều cao nhỏ hơn cho vừa mobile */
-    }
+}
 }
 
 /* ===== BẮT ĐẦU SỬA DROPDOWN ===== */
@@ -288,17 +288,15 @@ body {
     position: relative;
     display: inline-block;
 }
-/* Nút kích hoạt (class này thêm vào .nav-link và .login-btn) */
+
 .dropdown-btn {
-    height: 50px; 
+    height:50px;
+    background: #ff9800;
+    color: white;
+    border: none;
     cursor: pointer;
 }
-/* Thêm: Ghi đè cho "Sản Phẩm" (dropdown đầu tiên) để căn trái */
-.nav-section .dropdown:first-child .dropdown-content {
-    right: auto;
-    left: 0;
-}
-/* Khung chứa menu con */
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -310,7 +308,7 @@ body {
     margin-top: 5px;
     right: 0;
 }
-    /* Các link bên trong menu con */
+
     .dropdown-content a {
         color: #333;
         padding: 12px 20px;
@@ -318,12 +316,12 @@ body {
         display: block;
         transition: all 0.3s;
     }
-        /* Khi hover vào .dropdown, hiển thị .dropdown-content */
+
         .dropdown-content a:hover {
             background-color: #ff9800;
             color: white;
         }
-        /* Khi hover vào .dropdown, đổi màu nút kích hoạt */
+
         .dropdown-content a:first-child {
             border-radius: 8px 8px 0 0;
         }
