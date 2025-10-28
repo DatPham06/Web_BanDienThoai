@@ -7,15 +7,15 @@ body {
 .contact {
     text-align: center;
     padding: 40px; 
-    background-color: goldenrod;
+    background-color: pink;
     position: relative;
     /*đặt cơ sở tham chiếu cho các phần con dùng position: absolute (ví dụ .contact-icon). Nếu bỏ relative, icon absolute sẽ lấy body làm tham chiếu.*/
 }
 
-    .contact h1 {
-        font-size: 30px;
-        margin-bottom: 5px; /*khoảng cách giữa tiêu đề và dòng phụ bên dưới*/
-    }
+.contact h1 {
+     font-size: 30px;
+     margin-bottom: 5px; /*khoảng cách giữa tiêu đề và dòng phụ bên dưới*/
+}
 
 /*tạo khoảng cách giữa dòng phụ và members*/
 .sub-title {
