@@ -290,10 +290,6 @@ body {
 }
 
 .dropdown-btn {
-    height:50px;
-    background: #ff9800;
-    color: white;
-    border: none;
     cursor: pointer;
 }
 
